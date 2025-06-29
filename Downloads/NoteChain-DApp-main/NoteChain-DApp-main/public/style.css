@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+  background-color: rgba(34, 128, 190, 0.707)
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#connectWalletBtn {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 5px;
+  width:auto;
+}
+#connectWalletBtn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+#wallet-status {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+select{
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+  width:100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin: 10px 0px;
+}
+
+#noteContent {
+  width: 100%;
+  padding: 5px;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin: 5px 0px;
+}
+#searchInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+div h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 5px;
+  margin-top:0px
+}
+.newnote {
+  margin-bottom: 20px;
+  margin-top: 0px;
+  padding: 5px;
+  background-color: rgba(20, 19, 19, 0);
+  border-radius: 6px;
+}
+.button {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.note-header {
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  width: 80%;
+  margin:auto;
+  margin-bottom: 5px;
+}
+
+.deleteBtn {
+  background-color: rgba(255, 0, 51, 0.844);
+  color: white;
+  padding: 6px 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editBtn {
+  background-color: rgba(238, 255, 0, 0.782);
+  color: white;
+  padding: 6px 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

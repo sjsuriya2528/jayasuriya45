@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NoteChain DApp</title>
+  <link rel="stylesheet" href="/NoteChain-DApp/public/style.css" />
+  <link rel="icon" href="/NoteChain-DApp/public/fav-icon.png" type="image/x-icon">
+</head>
+<body>
+  <h1>NoteChain - Decentralized Notes App</h1>
+
+  <select id="providerSelect">
+    <option value="metamask">MetaMask</option>
+    <option value="ganache">Ganache</option>
+  </select>
+
+  <button id="connectWalletBtn">Connect Wallet</button>
+  <div id="wallet-status">Wallet not connected</div>
+  <div class="newnote">
+    <h2>Create a New Note</h2>
+  <textarea id="noteContent" placeholder="Enter your note here..." rows="15" cols="79" autofocus></textarea>
+  <input type="text" id="noteTag" placeholder="Optional tag (e.g., work)" />
+  </div>
+  <div class="button">
+    <button id="addNoteBtn">Add Note</button>
+    <button id="clearNotesBtn">Clear All Notes</button>
+  </div>
+
+  <input type="text" id="searchInput" placeholder="Search notes..." oninput="renderNotes()" />
+  <ul id="notesList"></ul>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.min.js"></script>
+  <script src="/NoteChain-DApp/public/app.js"></script>
+</body>
+</html>
