@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VaangaPalagalam - Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 flex items-center justify-center h-screen">
+  <div class="bg-gray-800 p-6 rounded-lg text-center w-80">
+    <h1 class="text-2xl text-green-400 font-bold mb-4">VaangaPalagalam</h1>
+    <input id="username" type="text" placeholder="Enter your name"
+      class="w-full p-2 mb-4 rounded bg-gray-700 text-white focus:outline-none" />
+    <button type="submit" class="bg-green-500 px-4 py-2 rounded text-white mx-auto">Join Chat</button>
+  </div>
+
+  <script>
+    function login() {
+      const name = document.getElementById('username').value.trim();
+      if (name) {
+        localStorage.setItem('username', name);
+        window.location.href = 'index.html';
+      }
+    }
+    document.getElementById('username').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') login();
+    });
+  </script>
+</body>
+</html>
